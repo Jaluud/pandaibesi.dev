@@ -1,0 +1,216 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>PandaiBesi Business Factory</title>
+<meta name="description" content="From iron to software, useful things are made the same way: shaped, tested, refined. PandaiBesi finds, tests and runs small businesses with AI agents.">
+<meta name="theme-color" content="#ECE8DF">
+<meta name="color-scheme" content="light">
+<link rel="canonical" href="https://pandaibesi.dev/">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://pandaibesi.dev/">
+<meta property="og:title" content="PandaiBesi Business Factory">
+<meta property="og:description" content="From iron to software, useful things are made the same way: shaped, tested, refined.">
+<meta property="og:image" content="https://pandaibesi.dev/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="preload" href="/fonts/inter-tight.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/fonts/jetbrains-mono.woff2" as="font" type="font/woff2" crossorigin>
+<style>
+@font-face{font-family:"Inter Tight";src:url(/fonts/inter-tight.woff2) format("woff2");font-weight:100 900;font-display:swap}
+@font-face{font-family:"JetBrains Mono";src:url(/fonts/jetbrains-mono.woff2) format("woff2");font-weight:400;font-display:swap}
+:root{
+  --paper:#ECE8DF;--paper-2:#E3DED2;--ink:#14130F;--ink-2:#3A362F;--muted:#5A554C;
+  --rule:#C4BEB0;--ember:#A8360B;--iron:#5E4636;
+  --sans:"Inter Tight",ui-sans-serif,system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+  --mono:"JetBrains Mono",ui-monospace,"SF Mono",Menlo,Consolas,"Liberation Mono",monospace;
+  --gutter:clamp(16px,4vw,48px);
+}
+*,*::before,*::after{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%;scroll-behavior:smooth}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+body{margin:0;background:var(--paper);color:var(--ink);font:400 1.0625rem/1.55 var(--sans);text-rendering:optimizeLegibility}
+a{color:inherit}
+:focus-visible{outline:2px solid var(--ember);outline-offset:3px}
+.skip{position:absolute;left:var(--gutter);top:-100px;background:var(--ink);color:var(--paper);padding:.6rem 1rem;font:400 .8rem var(--mono);z-index:10}
+.skip:focus{top:.75rem}
+.label{font:400 .75rem/1.4 var(--mono);letter-spacing:.12em;text-transform:uppercase;font-feature-settings:"calt" 0}
+.wrap{padding-inline:var(--gutter);max-width:1440px;margin-inline:auto}
+
+header{border-bottom:1px solid var(--rule)}
+header .wrap{display:flex;justify-content:space-between;align-items:center;min-height:64px;gap:1rem}
+.mark{font:400 .95rem var(--mono);letter-spacing:.2em;text-decoration:none}
+.mark span{color:var(--ember)}
+nav ul{display:flex;gap:clamp(1rem,3vw,2.5rem);list-style:none;margin:0;padding:0}
+nav a{text-decoration:none;color:var(--muted);padding:.5rem 0}
+nav a:hover{color:var(--ink);text-decoration:underline;text-underline-offset:4px}
+
+.hero{padding-block:clamp(3rem,9vw,7.5rem) clamp(2rem,5vw,3.5rem)}
+.eyebrow{color:var(--ember);margin:0 0 1.5rem}
+h1{font-weight:600;font-size:clamp(2.4rem,6.6vw,6.25rem);line-height:.98;letter-spacing:-.035em;margin:0;max-width:15ch}
+.hero-foot{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:flex-end;gap:1.5rem 3rem;margin-top:clamp(2rem,5vw,3.5rem)}
+.lede{font-size:clamp(1.15rem,1.9vw,1.45rem);line-height:1.4;color:var(--ink-2);margin:0;max-width:30ch;font-weight:500;letter-spacing:-.01em}
+.btn{display:inline-flex;align-items:center;gap:.75rem;background:var(--ink);color:var(--paper);text-decoration:none;padding:1rem 1.4rem;min-height:48px}
+.btn:hover{background:var(--ember)}
+.btn svg{width:14px;height:14px}
+
+.ornament{border-block:1px solid var(--rule);padding-block:clamp(1.5rem,4vw,3rem) 1rem;margin:0;overflow:hidden}
+.ornament .art{container-type:inline-size}
+.ornament pre{margin:0;font-family:var(--mono);line-height:1;color:var(--iron);white-space:pre;overflow:hidden;font-variant-ligatures:none;font-feature-settings:"calt" 0,"liga" 0;font-kerning:none}
+.ornament .wide{font-size:calc(100cqi / 90.5)}
+.ornament .narrow{display:none;font-size:calc(100cqi / 38.6)}
+.ornament .code{color:var(--ember)}
+@media (max-width:640px){.ornament .wide{display:none}.ornament .narrow{display:block}}
+.caption{display:flex;justify-content:space-between;flex-wrap:wrap;gap:.5rem 2rem;color:var(--muted);margin-top:1.25rem}
+.caption i{font-style:normal;color:var(--ink)}
+
+section{padding-block:clamp(3.5rem,8vw,6.5rem)}
+.section-head{display:flex;justify-content:space-between;align-items:baseline;gap:1rem;margin-bottom:clamp(2rem,4vw,3rem)}
+h2{font-weight:600;font-size:clamp(1.9rem,4vw,3.25rem);line-height:1.02;letter-spacing:-.03em;margin:0}
+.count{color:var(--muted);margin:0}
+.grid3{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));border-top:1px solid var(--ink)}
+.grid3 article{padding:1.5rem clamp(1rem,2.5vw,2rem) 0 0}
+.grid3 article+article{border-left:1px solid var(--rule);padding-left:clamp(1rem,2.5vw,2rem)}
+.grid3 .label{color:var(--ember);margin:0 0 1.25rem}
+h3{font-weight:600;font-size:clamp(1.3rem,2vw,1.6rem);line-height:1.15;letter-spacing:-.02em;margin:0 0 .75rem}
+.grid3 p{margin:0;color:var(--ink-2);max-width:38ch}
+@media (max-width:820px){
+  .grid3{grid-template-columns:1fr}
+  .grid3 article{padding:1.5rem 0 1.75rem}
+  .grid3 article+article{border-left:0;border-top:1px solid var(--rule);padding-left:0}
+}
+
+.idea{background:var(--paper-2);border-block:1px solid var(--rule)}
+.split{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,1fr);gap:2rem clamp(2rem,6vw,6rem);align-items:start}
+.split p{margin:0;font-size:clamp(1.05rem,1.5vw,1.2rem);color:var(--ink-2);max-width:46ch}
+.split p+p{margin-top:1rem}
+@media (max-width:820px){.split{grid-template-columns:1fr}}
+
+.contact .email{display:inline-block;font-weight:600;font-size:clamp(1.6rem,6.2vw,5.5rem);letter-spacing:-.035em;line-height:1.05;text-decoration:none;border-bottom:2px solid var(--ember);overflow-wrap:anywhere;margin-top:1.5rem}
+.contact .email:hover{color:var(--ember)}
+.contact p{color:var(--ink-2);margin:1rem 0 0;max-width:44ch}
+
+footer{border-top:1px solid var(--rule)}
+footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:.5rem 2rem;padding-block:1.5rem 2rem;color:var(--muted)}
+</style>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header>
+  <div class="wrap">
+    <a class="mark" href="/" aria-label="PandaiBesi, home"><span aria-hidden="true">///</span> PANDAIBESI</a>
+    <nav aria-label="Main">
+      <ul>
+        <li><a href="#approach">Approach</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+  <div class="hero wrap">
+    <p class="eyebrow label">/// PandaiBesi Business Factory</p>
+    <h1>From iron to software, useful things are made the same way: shaped, tested, refined.</h1>
+    <div class="hero-foot">
+      <p class="lede">We find, test and run small businesses. AI agents do the groundwork. People make every call.</p>
+      <a class="btn label" href="mailto:ottmar@pandaibesi.dev">Get in touch <svg viewBox="0 0 14 14" aria-hidden="true"><path d="M1 13 13 1M4 1h9v9" fill="none" stroke="currentColor" stroke-width="1.5"/></svg></a>
+    </div>
+  </div>
+
+  <figure class="ornament" aria-label="A rough bar of raw metal drawn out into a finished blade whose point turns into code.">
+    <div class="wrap art">
+      <pre class="wide" aria-hidden="true"><!-- ornament:wide -->
+
+
+    =========================================
+   =-:::-::-:::=-::::-::::.:..:...:.:..:..-:.:===
+   :::-::---::-+-:::=-:.::.-....:.:::..:..-- .=-.===
+   .--==-:==-==+--::--..::::..::=.:....:..=- .+= .+====
+   -::+===#*+--=-:---:.--...:-==-.:.:..=:.=-..+=..+- :+-===
+   -=#=--*+-==:+=+=::--:==:-=+===-=+=-=+::++::*+.:*=..+- :-:=========================================================.
+   *+=+#%#+=+==**+:-=--=---===-:------=+=-+=::*+:-*=:.*- .=...-+=========================================================.
+   -=**#*=-==-+*=--+=+==*++++-++++===-++--+*--*+--*+--#=:-+:.:-+========================================================+++ <span class="code">&lt;/&gt;</span> <span class="code">{}</span>   <span class="code">;</span>      <span class="code">01</span>
+   ##%#*===++#+-==+**--=+==-=++++++*++++==**==#*-=#*-=#+-=*=-=++++++++++++++++++++++++++++++++++++++++++++++++++++*****##%+
+   +=+#+++##*+*##*#*=+*+++=+*****++=+=====**--**==#*==%*=+#*+*#%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%#=
+   ###*=*#*#+*++*****=+*++*+**++++=+*++*+=*#==##==%*=*%#*#%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%##+.
+   *###+***==*#%**=**#%######*****+*+=**++##=+##++%%*#%%%%%%################################################***++==
+   *####%#**#%@%##%**###*###**#******+*#*+#%++%%*#%%%%%%#+=
+   *###%%%%#%#%####%%%%**#**#%#####%%#%%**%%*#%%#%%%%#+
+   %@@%##@@%%%%%%@%@@@%%%%%@@@%@@@@%@%@@%#%%%%%@@%*+.
+   %@@%%@%%@@@@@@@@@@@@@@@@@@@@@@@@@@@@@%%@%%%#*+
+    =.*%*  =+*++...++*#***++.+.+++**++*=+**=.
+                                  .
+
+<!-- /ornament:wide --></pre>
+      <pre class="narrow" aria-hidden="true"><!-- ornament:narrow -->
+ .==================
+ =-:--=:::::.::...:::==.
+ ===+=---:=:==---:=--=.===========================.
+ +*#+=+-===+======+==+-+-:=========================== <span class="code">&lt;/&gt;</span> <span class="code">{}</span>  <span class="code">;</span>
+ +*+#***+=+++++++=+++*=#**#%%%%%%%%%%%%%%%%%%%%%%%%*.
+ +##**#**####*+**+#**%#%#*+======================.
+ *%%@%%%%%%%%%%@%#%%%#+.
+ .+++**+***++*****+=
+<!-- /ornament:narrow --></pre>
+    </div>
+    <figcaption class="wrap caption label"><span><i>pandai besi</i> (Indonesian), n. blacksmith</span><span>Raw / Shaped / Refined</span></figcaption>
+  </figure>
+
+  <section id="approach" aria-labelledby="approach-title">
+    <div class="wrap">
+      <div class="section-head">
+        <h2 id="approach-title">How we work</h2>
+        <p class="label count" aria-hidden="true">03 principles</p>
+      </div>
+      <div class="grid3">
+        <article>
+          <p class="label">01 / Shaped</p>
+          <h3>Understand before building.</h3>
+          <p>We start from the buyer's problem, how they solve it today and what the evidence says. We outsource thinking, never understanding.</p>
+        </article>
+        <article>
+          <p class="label">02 / Tested</p>
+          <h3>Real buyers decide.</h3>
+          <p>Every idea meets the market in a small, bounded test. A payment is evidence. A compliment is not.</p>
+        </article>
+        <article>
+          <p class="label">03 / Refined</p>
+          <h3>Verify, then improve.</h3>
+          <p>A claim that work is done is not proof that it works, so we check the result. Each run teaches the next, and complexity is added only when the work proves it is needed.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="idea" aria-labelledby="idea-title">
+    <div class="wrap split">
+      <h2 id="idea-title">Software is one material. Not the only one.</h2>
+      <div>
+        <p>People have always turned raw material into useful tools. The method has not changed: shape it, test it, refine it.</p>
+        <p>What we deliver depends on what the buyer needs: a service, software-assisted delivery or a software product. We choose the simplest form that keeps the promise.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="contact" aria-labelledby="contact-title">
+    <div class="wrap">
+      <h2 id="contact-title">Get in touch</h2>
+      <p class="invite">Questions, ideas or a problem that deserves a better tool.</p>
+      <a class="email" href="mailto:ottmar@pandaibesi.dev">ottmar@pandaibesi.dev</a>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap label">
+    <span>© 2026 PandaiBesi</span>
+    <span>Shaped, tested, refined.</span>
+  </div>
+</footer>
+</body>
+</html>

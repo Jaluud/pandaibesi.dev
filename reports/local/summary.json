@@ -1,0 +1,75 @@
+{
+  "url": "http://localhost:35649/",
+  "date": "2026-10-07T23:12:49.479Z",
+  "lighthouse": {},
+  "viewports": {
+    "mobile-375": {
+      "pageOverflowX": false,
+      "ornament": {
+        "className": "narrow",
+        "scrollWidth": 343,
+        "clientWidth": 343,
+        "fits": true
+      },
+      "fontsLoaded": [
+        "Inter Tight",
+        "JetBrains Mono"
+      ],
+      "axe": {
+        "violations": [],
+        "passes": 32
+      }
+    },
+    "mobile-320": {
+      "pageOverflowX": false,
+      "ornament": {
+        "className": "narrow",
+        "scrollWidth": 288,
+        "clientWidth": 288,
+        "fits": true
+      },
+      "fontsLoaded": [
+        "Inter Tight",
+        "JetBrains Mono"
+      ],
+      "axe": {
+        "violations": [],
+        "passes": 32
+      }
+    },
+    "tablet-768": {
+      "pageOverflowX": false,
+      "ornament": {
+        "className": "wide",
+        "scrollWidth": 707,
+        "clientWidth": 707,
+        "fits": true
+      },
+      "fontsLoaded": [
+        "Inter Tight",
+        "JetBrains Mono"
+      ],
+      "axe": {
+        "violations": [],
+        "passes": 32
+      }
+    },
+    "desktop-1440": {
+      "pageOverflowX": false,
+      "ornament": {
+        "className": "wide",
+        "scrollWidth": 1344,
+        "clientWidth": 1344,
+        "fits": true
+      },
+      "fontsLoaded": [
+        "Inter Tight",
+        "JetBrains Mono"
+      ],
+      "axe": {
+        "violations": [],
+        "passes": 32
+      }
+    }
+  }
+}

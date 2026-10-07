@@ -1,0 +1,19 @@
+{
+  "name": "pandaibesi.dev",
+  "private": true,
+  "type": "module",
+  "description": "One-page site for pandaibesi.dev. The site itself is plain static HTML in site/; these scripts are only for checks.",
+  "scripts": {
+    "ornament": "node scripts/ornament.mjs",
+    "serve": "node scripts/serve.mjs",
+    "images": "node scripts/images.mjs",
+    "check": "node scripts/check.mjs",
+    "verify": "node scripts/verify.mjs"
+  },
+  "devDependencies": {
+    "axe-core": "4.10.3",
+    "html-validate": "9.5.5",
+    "lighthouse": "12.6.1",
+    "playwright": "1.53.2"
+  }
+}
