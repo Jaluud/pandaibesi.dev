@@ -19,6 +19,13 @@ added at the owner's request on 2026-10-08. No em dashes anywhere (`npm run chec
 | Add complexity only when measured need | "Add infrastructure only for an accepted delivery/safety requirement or a repeated measured bottleneck" |
 | Learning from every run | "captured learning" in every stage; failure-learning loop |
 
+## Product rename (branch revamp/pandaibesi-product, 2026-10-08)
+
+The owner renamed the product Resto Review to PandaiBesi. The home page is now
+the product page; `/resto-review/` redirects home. The business factory site
+is kept as git tag `archive/business-factory-2026-10-08`. The facts below
+still apply, with "PandaiBesi" in place of "Resto Review" on the page.
+
 ## Resto Review section (added 2026-10-08)
 
 Facts come from the Resto Review repository (`Jaluud/resto-review`), not the SSOT.

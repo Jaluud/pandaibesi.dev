@@ -3,8 +3,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>PandaiBesi Business Factory</title>
-<meta name="description" content="From iron to software, useful things are made the same way: shaped, tested, refined. PandaiBesi finds, tests and runs small businesses with AI agents.">
+<title>PandaiBesi | What people say about your restaurant</title>
+<meta name="description" content="PandaiBesi finds what people post about your restaurant on TikTok, Instagram Reels, X and Threads, reads the tone of each post and shows the words behind every label. In private testing.">
 <meta name="theme-color" content="#ECE8DF">
 <meta name="color-scheme" content="light">
 <link rel="canonical" href="https://pandaibesi.dev/">
@@ -12,8 +12,8 @@
 <link rel="apple-touch-icon" href="/apple-touch-icon.png">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://pandaibesi.dev/">
-<meta property="og:title" content="PandaiBesi Business Factory">
-<meta property="og:description" content="From iron to software, useful things are made the same way: shaped, tested, refined.">
+<meta property="og:title" content="PandaiBesi | What people say about your restaurant">
+<meta property="og:description" content="What are people saying about your restaurant? Tone per post, with the words behind every label.">
 <meta property="og:image" content="https://pandaibesi.dev/og.png">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
@@ -87,7 +87,6 @@ h3{font-weight:600;font-size:clamp(1.3rem,2vw,1.6rem);line-height:1.15;letter-sp
 
 .product{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.2fr);gap:2rem clamp(2rem,6vw,6rem);border-top:1px solid var(--ink);padding-top:1.5rem;align-items:start}
 .product .label{color:var(--ember);margin:0 0 1.25rem}
-.product .more{margin:1.75rem 0 0;color:var(--paper)}
 .product .tagline{font-size:clamp(1.15rem,1.9vw,1.45rem);line-height:1.4;color:var(--ink-2);margin:0;max-width:24ch;font-weight:500;letter-spacing:-.01em}
 .product .body>p{margin:0;font-size:clamp(1.05rem,1.5vw,1.2rem);color:var(--ink-2);max-width:46ch}
 .facts{display:grid;grid-template-columns:auto minmax(0,1fr);gap:.75rem 1.5rem;margin:2rem 0 0;padding-top:1.5rem;border-top:1px solid var(--rule)}
@@ -108,6 +107,15 @@ h3{font-weight:600;font-size:clamp(1.3rem,2vw,1.6rem);line-height:1.15;letter-sp
 
 footer{border-top:1px solid var(--rule)}
 footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:.5rem 2rem;padding-block:1.5rem 2rem;color:var(--muted)}
+
+.shot{margin:0}
+.shot img{display:block;width:100%;height:auto;border:1px solid var(--rule)}
+.shot figcaption{color:var(--muted);margin-top:.9rem}
+.shots{display:grid;grid-template-columns:minmax(0,1.25fr) minmax(0,1fr);gap:2rem clamp(1.5rem,4vw,3rem);align-items:start}
+@media (max-width:820px){.shots{grid-template-columns:1fr}}
+.status{color:var(--ember);margin:0 0 1.5rem}
+.back{color:var(--muted)}
+.note{margin:2rem 0 0}
 </style>
 </head>
 <body>
@@ -117,8 +125,8 @@ footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:.5rem
     <a class="mark" href="/" aria-label="PandaiBesi, home"><span aria-hidden="true">///</span> PANDAIBESI</a>
     <nav aria-label="Main">
       <ul>
-        <li><a href="#work">Work</a></li>
-        <li class="wide-only"><a href="#approach">Approach</a></li>
+        <li><a href="#feed">Product</a></li>
+        <li class="wide-only"><a href="#how">How it works</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
     </nav>
@@ -127,15 +135,71 @@ footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:.5rem
 
 <main id="main">
   <div class="hero wrap">
-    <p class="eyebrow label">/// PandaiBesi Business Factory</p>
-    <h1>From iron to software, useful things are made the same way: shaped, tested, refined.</h1>
+    <p class="eyebrow label">/// PandaiBesi / In private testing</p>
+    <h1>What are people saying about your restaurant?</h1>
     <div class="hero-foot">
-      <p class="lede">We find, test and run small businesses. AI agents do the groundwork. People make every call.</p>
-      <a class="btn label" href="mailto:ottmar@pandaibesi.dev">Get in touch <svg viewBox="0 0 14 14" aria-hidden="true"><path d="M1 13 13 1M4 1h9v9" fill="none" stroke="currentColor" stroke-width="1.5"/></svg></a>
+      <p class="lede">PandaiBesi finds posts about your restaurant on TikTok, Instagram Reels, X and Threads, reads their tone and shows the words behind every label.</p>
+      <a class="btn label" href="mailto:ottmar@pandaibesi.dev?subject=PandaiBesi">Ask about testing <svg viewBox="0 0 14 14" aria-hidden="true"><path d="M1 13 13 1M4 1h9v9" fill="none" stroke="currentColor" stroke-width="1.5"/></svg></a>
     </div>
   </div>
 
-  <figure class="ornament" aria-label="A rough bar of raw metal drawn out into a finished blade whose point turns into code.">
+  <section id="feed" class="idea" aria-labelledby="look-title">
+    <div class="wrap">
+      <div class="section-head">
+        <h2 id="look-title">The mentions feed</h2>
+        <p class="label count">Sample data</p>
+      </div>
+      <div class="shots">
+        <figure class="shot">
+          <img src="/img/feed.jpg" width="936" height="883" alt="PandaiBesi mentions feed for a sample restaurant. Two posts, one marked Positive with Food Positive, one marked Negative with Service, Value and Convenience Negative, each with its view count.">
+          <figcaption class="label">The feed: newest posts first, each with its overall tone and element labels.</figcaption>
+        </figure>
+        <figure class="shot">
+          <img src="/img/evidence.jpg" width="752" height="612" loading="lazy" alt="Details of one post marked Mixed. Food Positive quotes Nasi bakarnya enak banget, Ambience Negative quotes tempatnya panas, Convenience Negative quotes parkirnya susah.">
+          <figcaption class="label">Details: every element label quotes the post's own words.</figcaption>
+        </figure>
+      </div>
+      <p class="label back note">Design mockup. Restaurant, accounts and posts are invented.</p>
+    </div>
+  </section>
+
+  <section id="how" aria-labelledby="how-title">
+    <div class="wrap">
+      <div class="section-head">
+        <h2 id="how-title">How it works</h2>
+        <p class="label count" aria-hidden="true">03 steps</p>
+      </div>
+      <div class="grid3">
+        <article>
+          <p class="label">01 / Collect</p>
+          <h3>Find the posts.</h3>
+          <p>PandaiBesi searches TikTok, Instagram Reels, X and Threads for posts about one restaurant, within a fixed monthly budget per restaurant.</p>
+        </article>
+        <article>
+          <p class="label">02 / Judge</p>
+          <h3>Read the tone.</h3>
+          <p>Each caption is checked: is it about the restaurant, and is it positive, negative or mixed? Then for food, service, value, ambience and convenience.</p>
+        </article>
+        <article>
+          <p class="label">03 / Show</p>
+          <h3>Keep the evidence.</h3>
+          <p>Every element label quotes the words it came from, so a person can check it. No label means no opinion was read, never neutral.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="idea" aria-labelledby="status-title">
+    <div class="wrap split">
+      <h2 id="status-title">In private testing.</h2>
+      <div>
+        <p>PandaiBesi runs privately while we test how well it finds and reads posts. It is not open to the public yet.</p>
+        <p>It is built with Claude Code, step by step, and each step is checked before the next one starts.</p>
+      </div>
+    </div>
+  </section>
+
+  <figure class="ornament" aria-label="A rough bar of raw metal drawn out into a finished blade whose point turns into code. Pandai besi is Indonesian for blacksmith.">
     <div class="wrap art">
       <pre class="wide" aria-hidden="true"><!-- ornament:wide -->
 
@@ -174,73 +238,11 @@ footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:.5rem
     <figcaption class="wrap caption label"><span><i>pandai besi</i> (Indonesian), n. blacksmith</span><span>Raw / Shaped / Refined</span></figcaption>
   </figure>
 
-  <section id="work" aria-labelledby="work-title">
-    <div class="wrap">
-      <div class="section-head">
-        <h2 id="work-title">What we are building</h2>
-        <p class="label count" aria-hidden="true">01 product</p>
-      </div>
-      <article class="product">
-        <div>
-          <p class="label">01 / In private testing</p>
-          <h3>Resto Review</h3>
-          <p class="tagline">What are people saying about your restaurant?</p>
-          <a class="btn label more" href="/resto-review/">See the product <svg viewBox="0 0 14 14" aria-hidden="true"><path d="M1 13 13 1M4 1h9v9" fill="none" stroke="currentColor" stroke-width="1.5"/></svg></a>
-        </div>
-        <div class="body">
-          <p>Resto Review follows TikTok, Instagram Reels, X and Threads, and shows each post with its tone for food, service, value, ambience and convenience. Every label quotes the post's own words, so a person can check it.</p>
-          <dl class="facts">
-            <dt class="label">Sources</dt><dd>TikTok, Instagram Reels, X, Threads</dd>
-            <dt class="label">Reads</dt><dd>Food, service, value, ambience, convenience</dd>
-            <dt class="label">Built with</dt><dd>Claude Code</dd>
-            <dt class="label">Status</dt><dd>In private testing, not yet public</dd>
-          </dl>
-        </div>
-      </article>
-    </div>
-  </section>
-
-  <section id="approach" aria-labelledby="approach-title">
-    <div class="wrap">
-      <div class="section-head">
-        <h2 id="approach-title">How we work</h2>
-        <p class="label count" aria-hidden="true">03 principles</p>
-      </div>
-      <div class="grid3">
-        <article>
-          <p class="label">01 / Shaped</p>
-          <h3>Understand before building.</h3>
-          <p>We start from the buyer's problem, how they solve it today and what the evidence says. We outsource thinking, never understanding.</p>
-        </article>
-        <article>
-          <p class="label">02 / Tested</p>
-          <h3>Real buyers decide.</h3>
-          <p>Every idea meets the market in a small, bounded test. A payment is evidence. A compliment is not.</p>
-        </article>
-        <article>
-          <p class="label">03 / Refined</p>
-          <h3>Verify, then improve.</h3>
-          <p>A claim that work is done is not proof that it works, so we check the result. Each run teaches the next, and complexity is added only when the work proves it is needed.</p>
-        </article>
-      </div>
-    </div>
-  </section>
-
-  <section class="idea" aria-labelledby="idea-title">
-    <div class="wrap split">
-      <h2 id="idea-title">Software is one material. Not the only one.</h2>
-      <div>
-        <p>People have always turned raw material into useful tools. The method has not changed: shape it, test it, refine it.</p>
-        <p>What we deliver depends on what the buyer needs: a service, software-assisted delivery or a software product. We choose the simplest form that keeps the promise.</p>
-      </div>
-    </div>
-  </section>
-
   <section id="contact" class="contact" aria-labelledby="contact-title">
     <div class="wrap">
-      <h2 id="contact-title">Get in touch</h2>
-      <p class="invite">Questions, ideas or a problem that deserves a better tool.</p>
-      <a class="email" href="mailto:ottmar@pandaibesi.dev">ottmar@pandaibesi.dev</a>
+      <h2 id="contact-title">Interested?</h2>
+      <p class="invite">Run a restaurant and want to know what people post about it? Write to us.</p>
+      <a class="email" href="mailto:ottmar@pandaibesi.dev?subject=PandaiBesi">ottmar@pandaibesi.dev</a>
     </div>
   </section>
 </main>
