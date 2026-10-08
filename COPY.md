@@ -2,7 +2,8 @@
 
 Source of truth: `PandaiBesi Business Factory.md` (SSOT, adopted 2026-09-11).
 Every line on the page must trace to that note. No products, customers,
-numbers or results are claimed. No em dashes anywhere (`npm run check` enforces it).
+numbers or results are claimed, except the Resto Review section below,
+added at the owner's request on 2026-10-08. No em dashes anywhere (`npm run check` enforces it).
 
 ## Locked facts (never altered by edits)
 
@@ -17,6 +18,21 @@ numbers or results are claimed. No em dashes anywhere (`npm run check` enforces 
 | A claim of completion is not a pass | "An agent's completion claim is not a pass" |
 | Add complexity only when measured need | "Add infrastructure only for an accepted delivery/safety requirement or a repeated measured bottleneck" |
 | Learning from every run | "captured learning" in every stage; failure-learning loop |
+
+## Resto Review section (added 2026-10-08)
+
+Facts come from the Resto Review repository (`Jaluud/resto-review`), not the SSOT.
+
+| Fact on the page | Source |
+|---|---|
+| Sources: TikTok, Instagram Reels, X, Threads | README, Modules 09 and 10 |
+| Tone per food, service, value, ambience, convenience | README, Module 06 |
+| Every label quotes the post's own words | README, Module 06 ("every label quotes the caption's own words") |
+| Built with Claude Code | 41 of 49 commits co-authored by Claude |
+| Experiment platform, not yet public | CLAUDE.md ("an experiment platform, not a production review service") |
+
+Kept off the page: the judging model provider, the monthly budget, module
+numbers and validation status.
 
 ## Kept off the page (internal)
 
