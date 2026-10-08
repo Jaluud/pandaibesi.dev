@@ -29,7 +29,13 @@ Facts come from the Resto Review repository (`Jaluud/resto-review`), not the SSO
 | Tone per food, service, value, ambience, convenience | README, Module 06 |
 | Every label quotes the post's own words | README, Module 06 ("every label quotes the caption's own words") |
 | Built with Claude Code | 41 of 49 commits co-authored by Claude |
-| Experiment platform, not yet public | CLAUDE.md ("an experiment platform, not a production review service") |
+| In private testing, not yet public | CLAUDE.md ("an experiment platform, not a production review service"); owner chose the "private testing" wording on 2026-10-08 |
+| Fixed monthly budget per restaurant (product page) | README, standing monthly budget per restaurant |
+| No label means no opinion was read, never neutral (product page) | README, Module 06 |
+
+Product page screenshots (`site/resto-review/*.jpg`) come from the design
+mockup `sketches/007-warm-redesign`. Restaurant name and account handles were
+replaced with invented "Contoh" names, and the page labels them as sample data.
 
 Kept off the page: the judging model provider, the monthly budget, module
 numbers and validation status.
