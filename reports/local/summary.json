@@ -1,6 +1,6 @@
 {
-  "url": "http://localhost:38025/",
-  "date": "2026-10-09T03:17:31.986Z",
+  "url": "http://localhost:41941/",
+  "date": "2026-10-09T03:30:28.650Z",
   "lighthouse": {},
   "viewports": {
     "mobile-375": {
@@ -17,7 +17,7 @@
       ],
       "axe": {
         "violations": [],
-        "passes": 35
+        "passes": 37
       }
     },
     "mobile-320": {
@@ -34,7 +34,7 @@
       ],
       "axe": {
         "violations": [],
-        "passes": 35
+        "passes": 37
       }
     },
     "tablet-768": {
@@ -51,7 +51,7 @@
       ],
       "axe": {
         "violations": [],
-        "passes": 35
+        "passes": 37
       }
     },
     "desktop-1440": {
@@ -68,7 +68,7 @@
       ],
       "axe": {
         "violations": [],
-        "passes": 35
+        "passes": 37
       }
     }
   }
