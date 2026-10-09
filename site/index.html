@@ -108,6 +108,9 @@ h3{font-weight:600;font-size:clamp(1.3rem,2vw,1.6rem);line-height:1.15;letter-sp
 footer{border-top:1px solid var(--rule)}
 footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:.5rem 2rem;padding-block:1.5rem 2rem;color:var(--muted)}
 
+.demo{margin:clamp(2rem,5vw,3.5rem) 0 0}
+.demo video{display:block;width:100%;height:auto;aspect-ratio:16/9;background:var(--rule);border:1px solid var(--rule)}
+.demo figcaption{color:var(--muted);margin-top:.9rem}
 .shot{margin:0}
 .shot img{display:block;width:100%;height:auto;border:1px solid var(--rule)}
 .shot figcaption{color:var(--muted);margin-top:.9rem}
@@ -141,6 +144,12 @@ footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:.5rem
       <p class="lede">PandaiBesi finds posts about your restaurant on TikTok, Instagram Reels, X and Threads, uses AI sentiment analysis to read their tone, and shows the words behind every label.</p>
       <a class="btn label" href="#contact">Book a free demo <svg viewBox="0 0 14 14" aria-hidden="true"><path d="M1 13 13 1M4 1h9v9" fill="none" stroke="currentColor" stroke-width="1.5"/></svg></a>
     </div>
+    <figure class="demo">
+      <video controls muted playsinline preload="none" width="1280" height="720" poster="/video/demo-poster.jpg" aria-label="PandaiBesi walkthrough: the mentions feed, tone labels, a tone filter and the quoted evidence behind each label.">
+        <source src="/video/demo.mp4" type="video/mp4">
+      </video>
+      <figcaption class="label">50-second walkthrough. Design mockup with sample data.</figcaption>
+    </figure>
   </div>
 
   <section id="feed" class="idea" aria-labelledby="look-title">
